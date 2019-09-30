@@ -399,7 +399,7 @@ module.exports.warmUp = async (event, context) => {
         FunctionName: warmupOpts.name,
         InvocationType: 'RequestResponse',
         LogType: 'None',
-        Qualifier: environmentVars.SERVERLESS_ALIAS || '$LATEST',
+        Qualifier: '$LATEST',
         Payload: warmupOpts.payload,
       };
 
